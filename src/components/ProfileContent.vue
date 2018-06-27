@@ -46,7 +46,7 @@ export default {
 .content2 {
   display: flex;
   flex-direction: row;
-  width: 30%;
+  width: 60%;
   align-items: flex-end;
 }
 .card2 {
@@ -66,6 +66,7 @@ export default {
   display: flex;
   padding: 2px 16px;
   justify-content: flex-start;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 </style>

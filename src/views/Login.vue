@@ -43,6 +43,7 @@ export default {
         .alert("You have successfully logged in", function(){
           alertify.message('You are now logged in');
         });
+        this.$router.push({name: 'timeline'})
       })
       .catch (error => {
         alertify
