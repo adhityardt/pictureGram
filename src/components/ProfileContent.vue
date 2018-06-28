@@ -3,7 +3,7 @@
     <div v-for="picture of pictures" :key="picture['.key']">
       <!-- <img :src="picture.url" width="415" height="300"> -->
       <div class="card2">
-        <img :src="picture.url" alt="Avatar" style="width:100%">
+        <img :src="picture.url" alt="Avatar" style="width:100%;height:100%;">
         <div class="container2">
           <h4><b>{{picture.title}}</b></h4> 
           <p>{{picture.description}}</p> 
@@ -46,11 +46,12 @@ export default {
 .content2 {
   display: flex;
   flex-direction: row;
-  width: 60%;
+  flex-wrap: wrap;
   align-items: flex-end;
 }
 .card2 {
-
+  display: flex;
+  flex-wrap: wrap;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   text-align: left;
